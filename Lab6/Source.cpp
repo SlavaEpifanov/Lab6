@@ -25,6 +25,7 @@ int* gnome_sort(int* arr, int n) {
 	while (i < n) {
 		if (arr[i] >= arr[i - 1]) ++i;
 		else {
+			cout << " я гном" << endl;
 			swap(arr[i], arr[i - 1]);
 			--i;
 		}
@@ -89,6 +90,7 @@ int main() {
 	for (int i = 0; i < n; i++) cout << bubble_sorted[i] << " ";
 
 	//Задание 3 - гномья сортировка (Gnome sort)
+	cout << "нападение гномов";
 	cout << endl <<"Задание 3: Гномья сортировка" << endl;
 	int* gnome_sorted = gnome_sort(arr, n);
 	for (int i = 0; i < n; i++) cout << gnome_sorted[i] << " ";
